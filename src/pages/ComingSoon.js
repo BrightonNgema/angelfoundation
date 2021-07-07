@@ -7,7 +7,7 @@ export default class ComingSoon extends Component {
         return (
             <div style={{height:'100vh', backgroundColor:'#f9f9f9', flexDirection:'row',display:'flex',justifyContent:'center', alignItems:'center'}}>
                 <div style={{textAlign:'center'}}>
-                    <img src={Logo} style={{width:250}}/>
+                    <img alt="angle foundation logo" src={Logo} style={{width:250}}/>
                     <h1 style={{textAlign:'center', fontSize:isMobile ? 40: 80, fontWeight:900, marginTop:10}}>Coming Soon</h1>
                 </div>
             </div>
