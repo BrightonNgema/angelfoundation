@@ -116,7 +116,7 @@ button.my-button.lg{
 }
 
 .dropdown-menu-list{
-  /* margin-top:-400px; */
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
   width:100%;
   background-color:var(--angel_white);
   transition:0.6s
