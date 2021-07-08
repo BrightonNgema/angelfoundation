@@ -1,3 +1,11 @@
+:root {
+  --angel_orange:#ED9A00;
+  --angel_yellow:#FADA62;
+  --angel_white:#fff;
+  --angel_black:#000;
+  --angel_dark:#333333;
+}
+
 body {
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -16,4 +24,108 @@ h1,h2,h3,h4,h5,h6{
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+button.my-button{
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding: 8px 10px;
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: 0.3s;
+  background-color: transparent;
+}
+
+button.my-button:hover{
+  background-color:var(--angel_orange);
+  border-color: var(--angel_orange);
+  color: var(--angel_white);
+}
+
+.primary{
+  background-color:var(--angel_orange);
+}
+
+button.my-buttonbutton.my-button.primary:hover{
+  background-color:var(--angel_orange);
+}
+
+
+button.my-button.light{
+  border: 1px solid var(--angel_white);
+  color: var(--angel_white);
+}
+
+button.my-button.light:hover{
+  border: 1px solid var(--angel_orange);
+  color: var(--angel_white);
+}
+
+button.my-button.md{
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+button.my-button.lg{
+  padding: 12px 30px;
+  font-size: 14px;
+}
+
+
+/* Navigation styles */
+.NavList{
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.NavList li {
+    display: block;
+    flex: 0 1 auto; /* Default */
+    list-style-type: none;
+    margin-top:auto;
+    margin-bottom:auto;
+    transition: 0.3s;
+}
+
+.navi-link{
+  text-decoration: none;
+  color:var(--angel_dark);
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.navi-link.light{
+  color: var(--angel_white) !important;
+}
+
+.navi-link.light:hover{
+  color:var(--angel_orange) !important;
+}
+
+.navi-link:hover{
+  color:var(--angel_orange);
+}
+
+.dropdown-menu-list{
+  /* margin-top:-400px; */
+  width:100%;
+  background-color:var(--angel_white);
+  transition:0.6s
+}
+
+.activeMenu{
+  background-color: var(--angel_orange);
+  
+}
+.activeMenu .navi-link{
+  color: var(--angel_white) !important;
 }
