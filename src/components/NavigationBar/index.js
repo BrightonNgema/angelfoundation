@@ -9,28 +9,27 @@ const menuList = [
         link:"/"
     },
     {
-        name:"About",
+        name:"About Us",
         link:"/about"
     },
     {
-        name:"Projects",
-        link:"/projects"
+        name:"Our Approach",
+        link:"/our-approach"
     },
     {
-        name:"Volunteer",
-        link:"/volunteer"
+        name:"Our Goals",
+        link:"/our-goals"
     },
     {
-        name:"News",
-        link:"/news"
+        name:"How You Can Help?",
+        link:"/how-you-can-help"
     },
     {
-        name:"Contact",
-        link:"/contact"
+        name:"Partners",
+        link:"/partners"
     }
 ]
 function NavigationBar() {
-
     if(useWindowSize().width < 767){
         return <MobileNavigation menuList={menuList}/>
     }

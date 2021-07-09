@@ -2,7 +2,8 @@ import PropTypes from 'prop-types'
 
 const Button = props => {
     return (
-        <button 
+        <button
+            style={props.style}
             onClick={props.onClick}
             className={`my-button ${props.className}`}>
             {props.title}
