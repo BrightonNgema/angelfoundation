@@ -1,3 +1,16 @@
+@import './button.css';
+@import './navigation.css';
+
+:root {
+  --angel_orange:#ED9A00;
+  --angel_orange_transparent:rgba(237, 154, 0, 0.5);
+  --angel_yellow:#FADA62;
+  --angel_white:#fff;
+  --angel_black:#000;
+  --angel_black_transparent:rgba(0,0,0,0.5);
+  --angel_dark:#333333;
+}
+
 body {
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -16,4 +29,8 @@ h1,h2,h3,h4,h5,h6{
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:focus, :focus-visible{
+  outline: none !important
 }
