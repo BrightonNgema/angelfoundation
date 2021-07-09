@@ -16,6 +16,10 @@ button.my-button{
     color: var(--angel_white);
     transform: translateY(-10%);
   }
+
+  button.my-button.no-transform:hover{
+    transform: translateY(0%) !important;
+  }
   
   button.my-button.primary{
     color: var(--angel_white);

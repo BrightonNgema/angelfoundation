@@ -23,25 +23,36 @@ function DesktopNavigation({menuList, history}) {
         const isActive = history.location.pathname === x.link
         return isActive ? "desktop-activeMenu" : ""
     }
-    const isTop = scrollPosition > 100 ? {background:'#fff',boxShadow: "0 10px 20px rgba(43,61,79,.05)"} : {color:'#fff'};
- 
+
+    const onSocial = (social) =>{
+        switch (social) {
+            case "facebook": alert("facebook clicked")
+                break;
+            case "twitter":alert("twitter clicked")
+                break;
+            case "instagram": alert("instagram clicked")
+                break;
+            default:
+                break;
+        }
+    }
+
+    const isScrollEnough = scrollPosition > 100;
     return (
-        <div style={{top:0,width:'100%', position:'fixed', ...isTop, transition:'0.6s'}}>
+        <div className={`desktop-nav ${isScrollEnough ? "sticky-nav" : "non-sticky-nav"}`}>
             <div className="container pt-4 pb-4">
                 <div className="row text-center">
-                    <div style={{display:'flex',width:'14%', marginRight:'1%'}}>
-                        <div style={{margin:'auto 0px'}}>
-                            <FaFacebook size="18px"  style={{marginRight:20}}/>
-                            <FaTwitter size="21px"  style={{marginRight:20}}/>
-                            <AiFillInstagram size="21px"/>
-                        </div>
+                    <div style={{display:'flex',justifyContent:'space-evenly', alignItems:'center',width:'14%', marginRight:'1%'}}>
+                            <FaFacebook onClick={() => onSocial('facebook')} className="social-icon" size="18px"/>
+                            <FaTwitter onClick={() => onSocial('twitter')} className="social-icon" size="21px"/>
+                            <AiFillInstagram onClick={() => onSocial('instagram')} className="social-icon" size="21px"/>
                     </div>
                     <div style={{display:'flex', width:'70%'}}>
                         <ul className="NavList">
                             {menuList.map((x, index) => {
                                 return (
                                     <React.Fragment>
-                                        <li><Link to={x.link}className={`navi-link ${scrollPosition < 100 ? 'light ' : ""}`+activeMenu(x)}>{x.name}</Link></li>
+                                        <li><Link to={x.link}className={`navi-link ${isScrollEnough ? '' : "light "}`+activeMenu(x)}>{x.name}</Link></li>
                                         {index === 2 && 
                                             <li> 
                                                 <Link to="/" className={`navi-link`}>
@@ -57,8 +68,9 @@ function DesktopNavigation({menuList, history}) {
                     <div style={{display:'flex',width:'14%',marginLeft:'1%'}}>
                         <div style={{margin:'auto 0px auto auto'}}>
                         <Button 
-                            className={scrollPosition > 100 ? "" : "light"}
+                            className={`no-transform ${isScrollEnough ? "" : "light"}`}
                             title="Contact Us"
+                            onClick={() =>  history.push("/contact")}
                          />
                         </div>
                     </div>
