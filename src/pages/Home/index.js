@@ -1,21 +1,29 @@
 
 import React, { Component } from 'react'
 import {Helmet} from "react-helmet";
-import Button from '../../components/Button';
-import { colors } from '../../utils/theme';
 import { animateScroll } from "react-scroll";
-import { FaChartPie } from 'react-icons/fa';
-
-
-const image1 = "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80";
+import {
+    Button,
+    Loader,
+    NavigationBar
+} from '../../components'
+import { colors } from '../../utils/theme';
+import Banner from './Banner';
+import Section1 from './section1';
 
 class HomePage extends Component {
 
+    state = {
+        loading:true
+    }
+
     componentDidMount(){
         animateScroll.scrollToTop();
+        this.setState({loading:false})
     }
 
     render() {
+        if(this.state.loading) return <Loader />
         return (
             <div>
                 <Helmet>
@@ -23,120 +31,77 @@ class HomePage extends Component {
                     <title>Angel Foundation - Home</title>
                     <link rel="canonical" href="https://www.angelfoundation.africa/" />
                 </Helmet>
+                <NavigationBar/>
+                <Banner/>
                 <section>
-                    <div style={{backgroundPosition:'center', backgroundSize:'cover',
-                        height:'110vh', backgroundImage:`linear-gradient(
-                        to bottom,
-                        rgba(60,60,60, 0.5),
-                        rgba(60,60,60, 0.7)
-                    ),url(${image1})`,display:'flex'}}>
-                        <div className="container pt-1" style={{margin:'auto',maxWidth:900, textAlign:'center',color:colors.angel_white}}>
-                            <h1 style={{fontSize:75,fontWeight:'bold' }}>Hope For Musicians</h1>
-                            <p>
-                                Mi in nulla posuere sollicitudin aliquam ultrices sagittis. 
-                                Egestas quis ipsum suspendisse ultrices gravida. 
-                                Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. 
-                                Arcu risus quis varius quam quisque id diam. 
-                                Aliquet enim tortor at auctor urna nunc id
-                            </p>
-                            <div className="row mt-5" style={{width:'100%',justifyContent:'center'}}>
-                                <div className="col-auto mr-3"> 
-                                    <Button className="primary lg" title="Donate Now"/>
+                    <Section1 {...this.props}/>
+                    <div className="pt100 pb100" style={{background:colors.angel_dark}} >
+                        <div className="row angel-width mx-auto">
+                            <div>
+                                <div className="mx-auto">
+                                    <h1 style={{padding:"5px 10px", backgroundColor:colors.angel_black, fontSize:12, width:95, color:'#fff'}}>Foundation</h1>
                                 </div>
-                                <div className="col-auto"> 
-                                    <Button className="dark lg" title="Discover More"/>
-                                </div>
-                            </div>
-                        </div>    
-                    </div>
-                    <div className="container">
-                        <div className="container p-5 pt-3 bg-light" style={{marginTop:-80,borderRadius:5}}>
-                            <div className="row mb-5 pt-5">
-                                <div className="col-4 " style={{borderRight:'1px solid #77777740'}}>
-                                    <div style={{textAlign:'center', paddingRight:30}}>
-                                        <FaChartPie size="50" color={colors.angel_orange}/>
-                                        <h5 className="mt-4 mb-4" style={{fontWeight:'600',}}>Healthy Food</h5>
-                                        <p className="mb-3" style={{fontSize:16}}>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna.
-                                        </p>
-                                        <p>
-                                            Make a donation
-                                        </p>
-                                    </div>
-                                </div>
-                               <div className="col-4" style={{borderRight:'1px solid #77777740'}}>
-                                    <div style={{textAlign:'center', paddingRight:10, paddingLeft:10}}>
-                                        <FaChartPie size="50" color={colors.angel_orange}/>
-                                        <h5 className="mt-4 mb-4" style={{fontWeight:'600',}}>Healthy Food</h5>
-                                        <p className="mb-3" style={{fontSize:16}}>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna.
-                                        </p>
-                                        <p>
-                                            Make a donation
-                                        </p>
-                                    </div>
-                                </div>
-                               <div className="col-4">
-                                    <div style={{textAlign:'center', paddingLeft:30}}>
-                                        <FaChartPie size="50" color={colors.angel_orange}/>
-                                        <h5 className="mt-4 mb-4" style={{fontWeight:'600',}}>Healthy Food</h5>
-                                        <p className="mb-3" style={{fontSize:16}}>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna.
-                                        </p>
-                                        <p>
-                                            Make a donation
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr style={{backgroundColor:'#777777', height:1}}/>
-                            <div className="row mt-5 mb-2">
-                                <div className="col-4 " style={{borderRight:'1px solid #77777740'}}>
-                                    <div style={{textAlign:'center', paddingRight:30}}>
-                                        <FaChartPie size="50" color={colors.angel_orange}/>
-                                        <h5 className="mt-4 mb-4" style={{fontWeight:'600',}}>Healthy Food</h5>
-                                        <p className="mb-3" style={{fontSize:16}}>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna.
-                                        </p>
-                                        <p>
-                                            Make a donation
-                                        </p>
-                                    </div>
-                                </div>
-                               <div className="col-4" style={{borderRight:'1px solid #77777740'}}>
-                                    <div style={{textAlign:'center', paddingRight:10, paddingLeft:10}}>
-                                        <FaChartPie size="50" color={colors.angel_orange}/>
-                                        <h5 className="mt-4 mb-4" style={{fontWeight:'600',}}>Healthy Food</h5>
-                                        <p className="mb-3" style={{fontSize:16}}>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna.
-                                        </p>
-                                        <p>
-                                            Make a donation
-                                        </p>
-                                    </div>
-                                </div>
-                               <div className="col-4">
-                                    <div style={{textAlign:'center', paddingLeft:30}}>
-                                        <FaChartPie size="50" color={colors.angel_orange}/>
-                                        <h5 className="mt-4 mb-4" style={{fontWeight:'600',}}>Healthy Food</h5>
-                                        <p className="mb-3" style={{fontSize:16}}>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna.
-                                        </p>
-                                        <p>
-                                            Make a donation
-                                        </p>
-                                    </div>
-                                </div>
+                                <h2 className="mt-4 mb-4" style={{lineHeight:1, fontSize:55, textTransform:'uppercase', fontWeight:'bold', color:colors.angel_white}}>
+                                    ANGEL FOUNDATION<br/>ESTABLISHED
+                                </h2>
+                                <p style={{color:colors.angel_white}}>
+                                    The Angel Foundation for Musicians (AFM) was initiated by a core group of music industry executives in January 2020.<br/><br/>
+                                    The financial impact of the lockdown measures was confirmed through a widely publicized report commissioned by the South African Cultural Observatory (SACO) in association with IKS Cultural Consulting titled “Impact Analysis: Live Music and its Venues and the South African economy during COVID-19.”
+                                </p>
+                                <Button
+                                    className="dark lg mt-3"
+                                    title="Discover More"
+                                    onClick={() =>  this.props.history.push('/about')}
+                                />
                             </div>
                         </div>
                     </div>
-                <div style={{height:'300vh'}}/>
+                    <div className="pt100 pb100 mx-auto" style={{background:'#F7FBFF'}} >
+                        <div className="row angel-width mx-auto">
+                            <div className="col-12 text-center">
+                                <div className="mx-auto" style={{display:'flex', justifyContent:'center'}}>
+                                    <h1 style={{padding:"5px 10px", backgroundColor:colors.angel_orange, fontSize:12, width:80, color:'#fff'}}>Solution</h1>
+                                </div>
+                                <h2 className="mt-2 mb-4 " style={{lineHeight:1, fontSize:55, textTransform:'uppercase', fontWeight:'bold', color:colors.angel_black}}>
+                                    Our Approach
+                                </h2>
+                            </div>
+                        </div>
+                        <div className="row angel-width mx-auto pt40">
+                            <div className="col-md-2"></div>
+                            <div className="col-md-4">
+                                <div className="p-2" style={{backgroundColor:'#fff'}}>
+                                    <div style={{height:350,border:`2px solid ${colors.angel_orange}`}}>
+
+                                    </div>
+                                </div>
+                            </div>
+                            {/* <div className="col-md-4">
+                                <div className="p-2" style={{backgroundColor:'#fff'}}>
+                                    <div style={{height:350,border:`2px solid ${colors.angel_orange}`}}>
+
+                                    </div>
+                                </div>
+                            </div> */}
+                            <div className="col-md-4">
+                                <div className="p-2" style={{backgroundColor:'#fff'}}>
+                                    <div style={{height:350,border:`2px solid ${colors.angel_yellow}`}}>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-2"></div>
+                        </div>
+                        <div className="row angel-width mx-auto pt40">
+                            <div className="text-center">
+                                <Button
+                                    className="primary lg mt-3"
+                                    title="mORE ON oUR aPPROACH"
+                                    onClick={() =>  this.props.history.push('/about')}
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
         )

@@ -4,6 +4,7 @@ import {Helmet} from "react-helmet";
 import { colors } from '../../utils/theme';
 import { animateScroll } from "react-scroll";
 import dummyImages from '../../utils/dummyImages';
+import { NavigationBar } from '../../components';
 
 class Contact extends Component {
 
@@ -19,6 +20,7 @@ class Contact extends Component {
                     <title>Angel Foundation - Home</title>
                     <link rel="canonical" href="https://www.angelfoundation.africa/" />
                 </Helmet>
+                <NavigationBar />
                 <section>
                     <div style={{backgroundPosition:'center top', backgroundSize:'cover',
                         height:'60vh', backgroundImage:`linear-gradient(
