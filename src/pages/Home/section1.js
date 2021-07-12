@@ -13,12 +13,12 @@ const Section1 = (props) => {
                     <div >
                         <h1 style={{padding:"5px 10px", backgroundColor:colors.angel_orange, fontSize:12, width:60, color:'#fff'}}>About</h1>
                     </div>
-                    <h2 className="mt-4 mb-4" style={{lineHeight:1, fontSize:55, textTransform:'capitalize', fontWeight:'bold', color:colors.angel_dark}}>Realities Facing Musicians</h2>
+                    <h2 className="mt-4 mb-4" style={{lineHeight:1, fontSize:55, textTransform:'capitalize', fontWeight:'bold', color:colors.angel_dark}}>
+                        ANGEL FOUNDATION<br/>ESTABLISHED
+                    </h2>
                     <p >
-                        Various studies conducted in South Africa between March and November 2020 confirmed the 
-                        devastating impact that COVID-19 has had on musicians. With all live events cancelled and gigs 
-                        significantly reduced, even those that have turned to digital platforms have not been able to 
-                        recover from lost income. 
+                        The Angel Foundation for Musicians (AFM) was initiated by a core group of music industry executives in January 2020.<br/><br/>
+                        The financial impact of the lockdown measures was confirmed through a widely publicized report commissioned by the South African Cultural Observatory (SACO) in association with IKS Cultural Consulting titled “Impact Analysis: Live Music and its Venues and the South African economy during COVID-19.”
                     </p>
                     <Button
                         className="primary lg mt-3"
