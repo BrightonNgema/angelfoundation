@@ -10,7 +10,7 @@ const Section2 = (props) => {
                     <div className="mx-auto">
                         <h1 style={{padding:"5px 10px", backgroundColor:colors.angel_black, fontSize:12, width:95, color:'#fff'}}>Foundation</h1>
                     </div>
-                    <h2 className="mt-4 mb-4" style={{lineHeight:1, fontSize:55, textTransform:'uppercase', fontWeight:'bold', color:colors.angel_white}}>
+                    <h2 className="heading-lg mt-4 mb-4" style={{fontWeight:'bold', color:colors.angel_white}}>
                         Realities<br/>Facing Musicians
                     </h2>
                     <p style={{color:colors.angel_white}}>

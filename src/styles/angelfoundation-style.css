@@ -398,8 +398,25 @@
     margin-bottom: 100px;
 }
 
+.link-primary{
+    color:var(--angel_white)!important
+}
 
+.link-primary:hover{
+    color:var(--angel_orange)!important
+}
 
+.link-light{
+    color:var(--angel_orange) !important
+}
+
+.link-light:hover{
+    color:var(--angel_white)!important
+}
+
+.angel_white{
+    color:var(--angel_white)!important
+}
 
 .angel_orange{
     color:var(--angel_orange)

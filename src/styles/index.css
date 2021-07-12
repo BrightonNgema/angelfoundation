@@ -1,6 +1,8 @@
 @import './button.css';
 @import './navigation.css';
 @import './angelfoundation-style.css';
+@import './font-styles.css';
+@import './footer.css';
 
 :root {
   --angel_orange:#ED9A00;
@@ -52,7 +54,9 @@ code {
   outline: none !important
 }
 
-
+a{
+  text-decoration: none !important;
+}
 
 .home-landing{
   background-position: center center;

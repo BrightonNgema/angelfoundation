@@ -13,7 +13,7 @@ const Section1 = (props) => {
                     <div >
                         <h1 style={{padding:"5px 10px", backgroundColor:colors.angel_orange, fontSize:12, width:60, color:'#fff'}}>About</h1>
                     </div>
-                    <h2 className="mt-4 mb-4" style={{lineHeight:1, fontSize:55, textTransform:'capitalize', fontWeight:'bold', color:colors.angel_dark}}>
+                    <h2 className="heading-lg bold mt-4 mb-4" style={{color:colors.angel_dark}}>
                         ANGEL FOUNDATION<br/>ESTABLISHED
                     </h2>
                     <p >
