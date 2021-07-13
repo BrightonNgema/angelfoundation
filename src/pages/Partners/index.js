@@ -4,13 +4,34 @@ import { colors } from '../../utils/theme';
 import { animateScroll } from "react-scroll";
 import dummyImages from '../../utils/dummyImages';
 import { Footer, Loader, NavigationBar } from '../../components';
+import NationMediaSection from './NationMediaSection';
+import RegionalMediaSection from './RegionalMediaSection';
+import MusicMediaSection from './MusicMediaSection';
 
 class Partners extends Component {
-    state = { loading:true }
+    state = { 
+        loading:true,
+        music_media:[],
+        regional_media:[],
+        national_media:[]
+    }
 
     componentDidMount(){
         animateScroll.scrollToTop();
         this.setState({loading:false})
+        const music_media = this.importAll(require.context('../../assets/music_media', false, /\.(png|jpe?g|svg)$/));
+        const regional_media = this.importAll(require.context('../../assets/regional_media', false, /\.(png|jpe?g|svg)$/));
+        const national_media = this.importAll(require.context('../../assets/national_media', false, /\.(png|jpe?g|svg)$/));
+        this.setState({
+            music_media,
+            regional_media,
+            national_media
+        })
+    
+    }
+
+    importAll = (r) => {
+        return r.keys().map(r);
     }
 
     componentWillReceiveProps(){
@@ -38,7 +59,9 @@ class Partners extends Component {
                             <h2 style={{fontWeight:'bold' }}>Partners</h2>
                         </div>    
                     </div>
-                <div style={{height:'300vh'}}/>
+                    <MusicMediaSection images={this.state.music_media} />
+                    <RegionalMediaSection  images={this.state.regional_media} />
+                    <NationMediaSection  images={this.state.national_media}/>
                 </section>
                 <Footer/>
             </div>
