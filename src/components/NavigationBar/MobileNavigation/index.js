@@ -12,7 +12,7 @@ const MobileNavigation = ({menuList, history}) => {
         return isActive ? "activeMenu" : ""
     }
     return (
-        <div style={{top:0,width:'100%', position:'fixed',}}>
+        <div style={{top:0,width:'100%', position:'fixed',zIndex:999}}>
             <div style={{ backgroundColor:colors.angel_white,boxShadow: "0px 2px 5px 0px rgba(0,0,0,0.4)"}}>
                 <div className="container pt-3 pb-3">
                     <div className="row">

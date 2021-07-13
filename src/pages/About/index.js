@@ -4,13 +4,23 @@ import {Helmet} from "react-helmet";
 import { colors } from '../../utils/theme';
 import { animateScroll } from "react-scroll";
 import dummyImages from '../../utils/dummyImages';
+
+import { Footer, Loader, NavigationBar } from '../../components'
 class About extends Component {
+    state = { loading:true }
 
     componentDidMount(){
         animateScroll.scrollToTop();
+        this.setState({loading:false})
     }
 
+    componentWillReceiveProps(){
+        animateScroll.scrollToTop();
+    }
+
+
     render() {
+        if(this.state.loading) return <Loader />
         return (
             <div>
                 <Helmet>
@@ -18,6 +28,7 @@ class About extends Component {
                     <title>Angel Foundation - Home</title>
                     <link rel="canonical" href="https://www.angelfoundation.africa/" />
                 </Helmet>
+                <NavigationBar />
                 <section>
                     <div style={{backgroundPosition:'center top', backgroundSize:'cover',
                         height:'60vh', backgroundImage:`linear-gradient(
@@ -31,6 +42,7 @@ class About extends Component {
                     </div>
                 <div style={{height:'300vh'}}/>
                 </section>
+                <Footer/>
             </div>
         )
     }

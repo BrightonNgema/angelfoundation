@@ -1,11 +1,9 @@
 import React from "react";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
-import NavigationBar from "../components/NavigationBar";
 import { Home,About,OurApproach,OurGoals, HowYouCanHelp,Partners, Contact, ComingSoon} from '../pages';
 
 export default (
     <Router>
-        <NavigationBar/>
         <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/about" exact component={About} />
