@@ -196,9 +196,12 @@
     padding-bottom: 100px;
 }
 
-.angel-width{
-    max-width:1000px !important;
+@media only screen and (min-width: 1000px) {
+    .angel-width{
+        max-width:1000px !important;
+    }
 }
+
 
 .m10{
     margin:10px;
@@ -415,7 +418,7 @@
 }
 
 .angel_white{
-    color:var(--angel_white)!important
+    color:var(--angel_white)
 }
 
 .angel_orange{

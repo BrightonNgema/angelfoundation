@@ -4,14 +4,23 @@ import {Helmet} from "react-helmet";
 import { colors } from '../../utils/theme';
 import { animateScroll } from "react-scroll";
 import dummyImages from '../../utils/dummyImages';
-import { NavigationBar } from '../../components';
+
+import { Footer, Loader, NavigationBar } from '../../components'
 class About extends Component {
+    state = { loading:true }
 
     componentDidMount(){
         animateScroll.scrollToTop();
+        this.setState({loading:false})
     }
 
+    componentWillReceiveProps(){
+        animateScroll.scrollToTop();
+    }
+
+
     render() {
+        if(this.state.loading) return <Loader />
         return (
             <div>
                 <Helmet>
@@ -33,6 +42,7 @@ class About extends Component {
                     </div>
                 <div style={{height:'300vh'}}/>
                 </section>
+                <Footer/>
             </div>
         )
     }

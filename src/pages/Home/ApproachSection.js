@@ -19,9 +19,9 @@ const ApproachSection = (props) => {
                     </h2>
                 </div>
             </div>
-            <div className="row angel-width mx-auto pt40">
-                <div className="col-md-2"></div>
-                <div className="col-md-4">
+            <div className="row angel-width mx-auto pt40 text-center" style={{justifyContent:'center'}}>
+                {/* <div className="col-lg-2 col-1"></div> */}
+                <div className="col-md-6 col-sm-12 col-lg-4">
                     <div className="p-2" style={{backgroundColor:'#fff'}}>
                         <div className="text-center" style={{height:350,border:`2px solid ${colors.angel_yellow}`, display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
                             <GiTicket size={60} color={colors.angel_dark}/>
@@ -36,7 +36,7 @@ const ApproachSection = (props) => {
                         </div>
                     </div>
                 </div> */}
-                <div className="col-md-4">
+                <div className="col-md-6 col-sm-12 col-lg-4">
                     <div className="p-2" style={{backgroundColor:'#fff'}}>
                         <div className="text-center" style={{height:350,border:`2px solid ${colors.angel_yellow}`, display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
                             <RiHandCoinLine size={60} color={colors.angel_dark}/>
@@ -44,7 +44,7 @@ const ApproachSection = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-2"></div>
+                {/* <div className="col-lg-2 col-1"></div> */}
             </div>
             <div className="row angel-width mx-auto pt40">
                 <div className="text-center">

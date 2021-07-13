@@ -2,15 +2,31 @@ import React from 'react';
 import { Button } from '../../components';
 import { colors } from '../../utils/theme';
 
+//music media
 import BET from '../../assets/music_media/bet.png'
 import CHANNELO from '../../assets/music_media/channelo.png'
 import MTV from '../../assets/music_media/mtv.png'
 import SABC from '../../assets/music_media/sabc.png'
 import SLIKOUR from '../../assets/music_media/slikour.png'
-import TRACE from '../../assets/music_media/trace.png'
-// import BET from '../../assets/music_media/bet.png'
+import TRACE from '../../assets/music_media/trace.png';
 
-const PartnersSection = () => {
+//national media
+import ENCA from '../../assets/national_media/enca.png'
+import CITYPRESS from '../../assets/national_media/citypress.png'
+import LADUMA from '../../assets/national_media/laduma.png'
+import METROFM from '../../assets/national_media/metrofm.png'
+import THOBELA from '../../assets/national_media/thobela.png'
+import UKHOZI from '../../assets/national_media/ukhozi.png'
+
+//regional media
+import FM947 from '../../assets/regional_media/947.png'
+import EASTCOAST from '../../assets/regional_media/eastcoast.png'
+import KAYA from '../../assets/regional_media/kayafm.png'
+import VOLKSBALD from '../../assets/regional_media/volksblad.png'
+import MPUMALANGANEWS from '../../assets/regional_media/mpumalanganews.png'
+import POWERFM from '../../assets/regional_media/powerfm.png'
+
+const PartnersSection = (props) => {
     return (
         <div className="pt100 pb100 mx-auto" style={{background:colors.angel_white}} >
             <div className="row angel-width mx-auto">
@@ -23,64 +39,64 @@ const PartnersSection = () => {
                     </h2>
                 </div>
             </div>
-            <div className="row angel-width mx-auto pt40">
-                <div className="col-2 text-center ">
-                    <img src={BET} style={{height:70}}/>
+            <div className="row angel-width mx-auto pt50">
+                <div className="col-md-2 col-6 pb-3 mt-auto mb-auto text-center ">
+                    <img alt="angel foundation clients" className="client-logos" src={BET}/>
                 </div>
-                 <div className="col-2 text-center">
-                    <img src={CHANNELO} style={{height:70}}/>
+                <div className="col-md-2 col-6 pb-3 mt-auto mb-auto text-center">
+                    <img alt="angel foundation clients" className="client-logos" src={CHANNELO}/>
                 </div>
-                <div className="col-2 text-center">
-                    <img src={SABC} style={{height:70}}/>
+               <div className="col-md-2 col-6 pb-3 mt-auto mb-auto text-center">
+                    <img alt="angel foundation clients" className="client-logos" src={SABC}/>
                 </div>
-                 <div className="col-2 text-center">
-                    <img src={MTV} style={{height:70}}/>
+                <div className="col-md-2 col-6 pb-3 mt-auto mb-auto text-center">
+                    <img alt="angel foundation clients" className="client-logos" src={MTV}/>
                 </div>
-                 <div className="col-2 text-center">
-                    <img src={SLIKOUR} style={{height:70}}/>
+                <div className="col-md-2 col-6 pb-3 mt-auto mb-auto text-center">
+                    <img alt="angel foundation clients" className="client-logos" src={SLIKOUR}/>
                 </div>
-                <div className="col-2 text-center">
-                    <img src={TRACE} style={{height:70}}/>
+               <div className="col-md-2 col-6 pb-3 mt-auto mb-auto text-center">
+                    <img alt="angel foundation clients" className="client-logos" src={TRACE}/>
                 </div>
-            </div>
-            <div className="row angel-width mx-auto pt40">
-                <div className="col-2 text-center ">
-                    <img src={BET} style={{height:70}}/>
+        
+                <div className="col-md-2 col-6 pb-3 mt-auto mb-auto text-center">
+                    <img alt="angel foundation clients" className="client-logos" src={ENCA}/>
                 </div>
-                 <div className="col-2 text-center">
-                    <img src={CHANNELO} style={{height:70}}/>
+                <div className="col-md-2 col-6 pb-3 mt-auto mb-auto text-center">
+                    <img alt="angel foundation clients" className="client-logos" src={CITYPRESS}/>
                 </div>
-                <div className="col-2 text-center">
-                    <img src={SABC} style={{height:70}}/>
+               
+                <div className="col-md-2 col-6 pb-3 mt-auto mb-auto text-center">
+                    <img alt="angel foundation clients" className="client-logos" src={METROFM}/>
                 </div>
-                 <div className="col-2 text-center">
-                    <img src={MTV} style={{height:70}}/>
+                <div className="col-md-2 col-6 pb-3 mt-auto mb-auto text-center">
+                    <img alt="angel foundation clients" className="client-logos" src={THOBELA}/>
                 </div>
-                 <div className="col-2 text-center">
-                    <img src={SLIKOUR} style={{height:70}}/>
+                <div className="col-md-2 col-6 pb-3 mt-auto mb-auto text-center">
+                    <img alt="angel foundation clients" className="client-logos" src={LADUMA}/>
                 </div>
-                <div className="col-2 text-center">
-                    <img src={TRACE} style={{height:70}}/>
+               <div className="col-md-2 col-6 pb-3 mt-auto mb-auto text-center">
+                    <img alt="angel foundation clients" className="client-logos" src={UKHOZI}/>
                 </div>
-            </div>
-            <div className="row angel-width mx-auto pt40">
-                <div className="col-2 text-center ">
-                    <img src={BET} style={{height:70}}/>
+            
+                <div className="col-md-2 col-6 pb-3 mt-auto mb-auto text-center">
+                    <img alt="angel foundation clients" className="client-logos" src={POWERFM}/>
                 </div>
-                 <div className="col-2 text-center">
-                    <img src={CHANNELO} style={{height:70}}/>
+                <div className="col-md-2 col-6 pb-3 mt-auto mb-auto text-center">
+                    <img alt="angel foundation clients" className="client-logos" src={EASTCOAST}/>
                 </div>
-                <div className="col-2 text-center">
-                    <img src={SABC} style={{height:70}}/>
+                <div className="col-md-2 col-6 pb-3 text-center ">
+                    <img alt="angel foundation clients" className="client-logos" src={FM947}/>
                 </div>
-                 <div className="col-2 text-center">
-                    <img src={MTV} style={{height:70}}/>
+               <div className="col-md-2 col-6 pb-3 mt-auto mb-auto text-center">
+                    <img alt="angel foundation clients" className="client-logos" src={KAYA}/>
                 </div>
-                 <div className="col-2 text-center">
-                    <img src={SLIKOUR} style={{height:70}}/>
+                <div className="col-md-2 col-6 pb-3 mt-auto mb-auto text-center">
+                    <img alt="angel foundation clients" className="client-logos" src={MPUMALANGANEWS}/>
                 </div>
-                <div className="col-2 text-center">
-                    <img src={TRACE} style={{height:70}}/>
+               
+                <div className="col-md-2 col-6 pb-3 mt-auto mb-auto text-center">
+                    <img alt="angel foundation clients" className="client-logos" src={VOLKSBALD}/>
                 </div>
             </div>
             <div className="row angel-width mx-auto pt40">
@@ -88,7 +104,7 @@ const PartnersSection = () => {
                     <Button
                         className="dark lg mt-3"
                         title="View More"
-                        onClick={() =>  this.props.history.push('/our-approach')}
+                        onClick={() => props.history.push('/partners')}
                     />
                 </div>
             </div>

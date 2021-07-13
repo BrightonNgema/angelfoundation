@@ -4,6 +4,7 @@ import { FaFacebook,FaTwitter } from "react-icons/fa";
 import Logo from "../../assets/angelfoundation_logo_white.png";
 import { Link } from 'react-router-dom';
 import { colors } from '../../utils/theme';
+import { isMobile } from 'react-device-detect';
 const links = [
     {
         name:"About Us",
@@ -92,10 +93,10 @@ const Footer = () => {
           <div className="pt20 pb-1" style={{backgroundColor:colors.angel_black}}>
             <div className="container angel-width" style={{fontSize: 12}}>
                 <div className="row">
-                <div className="col-md-9 col-sm-6 col-xs-12 text-md-left">
+                <div className="col-md-9 col-sm-6 col-xs-12" style={{textAlign:isMobile ?  'center' : 'left'}}>
                     <p className="angel_white">© 2020 - {new Date().getFullYear()} <span style={{color:'#fff'}}>Angel Foundation.</span> All Rights Reserved.</p>
                 </div>
-                <div className="col-md-3 col-sm-6 col-xs-12 text-md-right text-center">
+                <div className="col-md-3 col-sm-6 col-xs-12 text-md-right text-center pb-3">
                     <div className="angel_white">Developed By<span><a style={{ marginLeft: 5}} className="link-light bold" alt="" href="https://ohtech.co.za" target="_blank" rel="noopener noreferrer">OpenHouse Technology</a></span></div>
                 </div>
                 </div>

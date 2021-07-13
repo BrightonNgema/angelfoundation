@@ -8,7 +8,7 @@ const image1 = "https://images.unsplash.com/photo-1603545908215-1010e64eb840?ixl
 const Section1 = (props) => {
     return (
         <div className="row angel-width mx-auto pb100" id="about-summary">
-            <div className="col-md-6" style={{paddingTop:'15vh', paddingBottom:'15vh'}}>
+            <div className="col-lg-6" style={{paddingTop:'15vh', paddingBottom:'15vh'}}>
                 <div className="pr30">
                     <div >
                         <h1 style={{padding:"5px 10px", backgroundColor:colors.angel_orange, fontSize:12, width:60, color:'#fff'}}>About</h1>

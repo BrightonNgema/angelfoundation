@@ -1,29 +1,25 @@
 
 import React, { Component } from 'react'
-import {Helmet} from "react-helmet";
-
+import { Helmet } from "react-helmet";
 import { animateScroll } from "react-scroll";
-import {
-    Button,
-    Footer,
-    Loader,
-    NavigationBar
-} from '../../components'
+import { Footer, Loader, NavigationBar } from '../../components'
 import Banner from './Banner';
-import Section1 from './section1';
-import Section2 from './section2';
+import AboutSection from './AboutSection';
+import FoundationSection from './FoundationSection';
 import ApproachSection from './ApproachSection';
 import PartnersSection from './PartnersSection';
 
 class HomePage extends Component {
 
-    state = {
-        loading:true
-    }
+    state = { loading:true }
 
     componentDidMount(){
         animateScroll.scrollToTop();
         this.setState({loading:false})
+    }
+
+    componentWillReceiveProps(){
+        animateScroll.scrollToTop();
     }
 
     render() {
@@ -38,11 +34,10 @@ class HomePage extends Component {
                 <NavigationBar/>
                 <Banner/>
                 <section>
-                    <Section1 {...this.props}/>
-                    <Section2 {...this.props}/>
+                    <AboutSection {...this.props}/>
+                    <FoundationSection {...this.props}/>
                     <ApproachSection {...this.props}/>
-                    <PartnersSection/>
-                    
+                    <PartnersSection {...this.props}/>
                 </section>
                 <Footer />
             </div>
