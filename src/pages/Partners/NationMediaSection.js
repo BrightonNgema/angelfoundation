@@ -20,7 +20,7 @@ const NationMediaSection = ({images}) => {
                 const imageUrl = image.default.includes("data") ? image.default : baseUrl+image.default
                 return(
                     <div className="col-md-3 col-6 pb-5 mt-3 mb-3 text-center" style={{maxHeight:100}}>
-                        <img alt="angel foundation clients" className="client-logos" src={imageUrl}/>
+                        <img alt="angel foundation clients" className="client-logos color" src={imageUrl}/>
                     </div>
                 )
             })}
