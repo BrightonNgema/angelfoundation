@@ -61,7 +61,7 @@ a{
 .home-landing{
   background-position: center center;
     background-size: cover;
-    height: 110vh;
+    min-height: 110vh;
     background-image: linear-gradient(rgba(60, 60, 60, 0.5), rgba(60, 60, 60, 0.7)), url(https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80);
     display: flex;
 }
@@ -98,6 +98,17 @@ a{
 @media only screen and (max-width: 600px) {
   .home-landing-content h1{
     font-size: 55px;
+  }
+  
+}
+
+@media only screen and (max-width:320px) {
+  .home-landing{
+    padding-top: 30vh;
+    padding-bottom: 20vh;
+  }
+  .home-landing-content h1{
+    font-size: 50px;
   }
   
 }
