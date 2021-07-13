@@ -21,7 +21,7 @@ const MobileNavigation = ({menuList, history}) => {
                                 <img alt="angle foundation logo" src={Logo} style={{height:50, margin:'auto', marginTop:-5}}/>
                             </Link>
                         </div>
-                        <div className="col-auto mt-auto mb-auto ml-auto">
+                        <div className="col-2 mt-auto mb-auto ml-auto">
                         <div className="mx-auto">
                             {!toggleMenu && <FaBars size="30px" onClick={() =>  setToggleMenu(true)}/>}
                             {toggleMenu && <AiOutlineClose size="30px" onClick={() =>  setToggleMenu(false)}/>}

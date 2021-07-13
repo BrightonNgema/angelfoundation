@@ -42,3 +42,22 @@
 
     }
 }
+
+
+@media only screen and (max-width: 320px) {
+    .heading-sm{
+
+    }
+
+    .heading-md{
+
+    }
+
+    .heading-lg{
+        font-size: 35px;
+    }
+
+    .heading-xlg{
+
+    }
+}

@@ -17,7 +17,7 @@ const Banner = () => {
     return (
         <div className="home-landing">
             <div className="home-landing-content container pt-1">
-                <h1>Hope For Musicians</h1>
+                <h1 className="heading-lg">Hope For Musicians</h1>
                 <p>
                     Mi in nulla posuere sollicitudin aliquam ultrices sagittis. 
                     Egestas quis ipsum suspendisse ultrices gravida. 
