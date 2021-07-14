@@ -11,7 +11,7 @@ const ApproachSection = () => {
                     <div className="mx-auto" style={{display:'flex', justifyContent:'center'}}>
                         <h1 style={{padding:"5px 10px", backgroundColor:colors.angel_orange, fontSize:12, width:131, color:'#fff'}}>Helping Musician</h1>
                     </div>
-                    <h1 className="heading-md bold mt-2 mb-4 text-center mx-auto" style={{color:colors.angel_black, width:700, alignSelf:'center'}}>
+                    <h1 className="heading-md bold mt-2 mb-4 text-center mx-auto" style={{color:colors.angel_black, maxWidth:700, alignSelf:'center'}}>
                         HOW THE ANGEL FOUNDATION WILL HELP AFFECTED MUSICIANS  
                     </h1>
                 </div>
