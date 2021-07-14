@@ -4,6 +4,8 @@ import { colors } from '../../utils/theme';
 import { animateScroll } from "react-scroll";
 import dummyImages from '../../utils/dummyImages';
 import { Footer, Loader, NavigationBar } from '../../components';
+import GovernmentSection from './GovernmentSection';
+import ConcernsSection from './ConcernsSection';
 
 class OurGoals extends Component {
     state = { loading:true }
@@ -39,7 +41,8 @@ class OurGoals extends Component {
                             <h2 style={{fontWeight:'bold' }}>Our Goals</h2>
                         </div>    
                     </div>
-                <div style={{height:'300vh'}}/>
+                    <GovernmentSection/>
+                    <ConcernsSection/>
                 </section>
                 <Footer/>
             </div>
