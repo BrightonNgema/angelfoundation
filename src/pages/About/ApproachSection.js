@@ -10,9 +10,9 @@ const ApproachSection = (props) => {
                     <div className="mx-auto" style={{display:'flex', justifyContent:'center'}}>
                         <h1 style={{padding:"5px 10px", backgroundColor:colors.angel_black, fontSize:12, width:80, color:'#fff'}}>Solution</h1>
                     </div>
-                    <h2 className="heading-lg bold mt-2 mb-4" style={{color:colors.angel_white}}>
-                        Want To Help ?
-                    </h2>
+                    <h1 className="heading-lg bold mt-2 mb-4" style={{color:colors.angel_white}}>
+                        Want To Help?
+                    </h1>
                 </div>
             
                 <div className="text-center">
