@@ -5,7 +5,12 @@ import { colors } from '../../utils/theme';
 import { animateScroll } from "react-scroll";
 import dummyImages from '../../utils/dummyImages';
 
-import { Footer, Loader, NavigationBar } from '../../components'
+import { Footer, Loader, NavigationBar } from '../../components';
+import AboutSection from './AboutSection';
+import FoundationSection from './FoundationSection';
+import ApproachSection from './ApproachSection';
+
+
 class About extends Component {
     state = { loading:true }
 
@@ -40,7 +45,9 @@ class About extends Component {
                             <h2 style={{fontWeight:'bold' }}>About Us</h2>
                         </div>    
                     </div>
-                <div style={{height:'300vh'}}/>
+                    <AboutSection {...this.props}/>
+                    <FoundationSection {...this.props}/>
+                    <ApproachSection {...this.props}/>
                 </section>
                 <Footer/>
             </div>

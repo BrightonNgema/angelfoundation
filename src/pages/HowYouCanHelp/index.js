@@ -29,7 +29,7 @@ class HowYouCanHelp extends Component {
                 </Helmet>
                 <NavigationBar />
                 <section>
-                    <div style={{backgroundPosition:'center', backgroundSize:'cover',
+                    <div style={{backgroundPosition:'center top', backgroundSize:'cover',
                         height:'60vh', backgroundImage:`linear-gradient(
                         to bottom,
                         rgba(0,0,0, 0.5),

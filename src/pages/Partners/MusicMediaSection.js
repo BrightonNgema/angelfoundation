@@ -19,7 +19,7 @@ const MusicMediaSection = ({images}) => {
             {images.map((image) => {
                 const imageUrl = image.default.includes("data") ? image.default : baseUrl+image.default
                 return(
-                    <div className="col-md-2 col-6 pb-3 mt-auto mb-auto text-center ">
+                    <div className="col-md-2 col-6 pb-3 mt-auto mb-auto text-center">
                         <img alt="angel foundation clients" className="client-logos color" src={imageUrl}/>
                     </div>
                 )
