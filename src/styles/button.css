@@ -1,0 +1,65 @@
+button.my-button{
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 8px 10px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: 0.3s;
+    background-color: transparent;
+  }
+  
+  button.my-button:hover{
+    background-color:var(--angel_orange);
+    border-color: var(--angel_orange);
+    color: var(--angel_white);
+    transform: translateY(-10%);
+  }
+
+  button.my-button.no-transform:hover{
+    transform: translateY(0%) !important;
+  }
+  
+  button.my-button.primary{
+    color: var(--angel_white);
+    background-color:var(--angel_orange);
+    border: 1px solid var(--angel_orange);
+  }
+  
+  button.my-button.primary:hover{
+    background-color:var(--angel_orange_transparent);
+    border-color:transparent;
+  }
+  
+  button.my-button.light{
+    border: 1px solid var(--angel_white);
+    color: var(--angel_white);
+  }
+  
+  button.my-button.light:hover{
+    border: 1px solid var(--angel_orange);
+    color: var(--angel_white);
+  }
+  
+  button.my-button.dark{
+    border: 1px solid var(--angel_black);
+    background-color:var(--angel_black);
+    color: var(--angel_white);
+  }
+  
+  button.my-button.dark:hover{
+    border: 1px solid transparent;
+    background-color:var(--angel_black_transparent);
+    color: var(--angel_white);
+  }
+  
+  button.my-button.md{
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  
+  button.my-button.lg{
+    padding: 15px 40px;
+    font-size: 14px;
+  }
