@@ -26,9 +26,9 @@ const Banner = () => {
                     Aliquet enim tortor at auctor urna nunc id
                 </p>
                 <div className="row mt-5" style={{width:'100%',justifyContent:'center'}}>
-                    <div className="col-auto mr-3 mb-4"> 
+                    {/* <div className="col-auto mr-3 mb-4"> 
                         <Button className="primary lg" title="Donate Now"/>
-                    </div>
+                    </div> */}
                     <div className="col-auto"> 
                         <Button className="dark lg" title="Discover More" onClick={onScroll}/>
                     </div>

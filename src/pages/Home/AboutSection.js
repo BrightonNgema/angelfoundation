@@ -22,7 +22,7 @@ const Section1 = (props) => {
                     </p>
                     <Button
                         className="primary lg mt-3"
-                        title="Discover More"
+                        title="Read More"
                         onClick={() => props.history.push('/about')}
                     />
                 </div>

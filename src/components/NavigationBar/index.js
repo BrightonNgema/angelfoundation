@@ -2,7 +2,6 @@ import React from 'react'
 import { useWindowSize } from '../../utils/useWindow';
 import MobileNavigation from './MobileNavigation'
 import DesktopNavigation from './DesktopNavigation'
-import { isMobile } from 'react-device-detect';
 
 const menuList = [
     {
@@ -31,7 +30,9 @@ const menuList = [
     }
 ]
 function NavigationBar() {
-    if(useWindowSize().width < 767 || isMobile){
+    const {width,height, isMobile} = useWindowSize()
+    console.log("isMobile", isMobile)
+    if(width < 769 || height < 800){
         return <MobileNavigation menuList={menuList}/>
     }
     return <DesktopNavigation menuList={menuList} />
