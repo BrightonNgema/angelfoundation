@@ -1,17 +1,18 @@
 import React from 'react'
-import { isMobile } from 'react-device-detect';
 import { colors } from '../../utils/theme';
+import { useWindowSize } from '../../utils/useWindow';
 
 const image1 = "https://images.unsplash.com/photo-1541788968749-7683d395688d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
 
 
 const AboutSection = (props) => {
+    const isSmallScreen = useWindowSize().width < 769
     return (
         <div className="row mx-auto pb100" id="about-summary">
-                    {!isMobile && <div className="col-md-5 mr-auto " style={{marginTop:'10vh',backgroundImage:`url(${image1})`, backgroundPosition:'center top', backgroundSize:'cover'}}>
-                    </div>}
-                        <div className="col-md-7" style={{paddingTop:'15vh',paddingBottom:'5vh'}}>
-                            <div className={isMobile ? '' : 'pl30'}>
+                     <div className="col-lg-5 mr-auto " style={{marginTop:isSmallScreen ? '':'10vh',backgroundImage:`url(${image1})`, backgroundPosition:'center top', backgroundSize:'cover'}}>
+                    </div>
+                        <div className="col-lg-7" style={{paddingTop:isSmallScreen ? '5vh':'15vh',paddingBottom:isSmallScreen ? '0vh':'5vh'}}>
+                            <div className={isSmallScreen ? '' : 'pl30'}>
                                 <div >
                                     <h1 style={{padding:"5px 10px", backgroundColor:colors.angel_orange, fontSize:12, width:60, color:'#fff'}}>About</h1>
                                 </div>

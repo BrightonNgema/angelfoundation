@@ -4,7 +4,7 @@ import { FaFacebook,FaTwitter } from "react-icons/fa";
 import Logo from "../../assets/angelfoundation_logo_white.png";
 import { Link } from 'react-router-dom';
 import { colors } from '../../utils/theme';
-import { isMobile } from 'react-device-detect';
+import { useWindowSize } from '../../utils/useWindow';
 const links = [
     {
         name:"About Us",
@@ -42,6 +42,8 @@ const onSocial = (social) =>{
 }
 
 const Footer = () => {
+    const isSmallScreen = useWindowSize().width < 767
+
     return (
         <footer>
           <div className="pt60 pb30" style={{backgroundColor:'#111', color:"#f7f7f7"}}>
@@ -93,10 +95,10 @@ const Footer = () => {
           <div className="pt20 pb-1" style={{backgroundColor:colors.angel_black}}>
             <div className="container angel-width" style={{fontSize: 12}}>
                 <div className="row">
-                <div className="col-md-9 col-sm-6 col-xs-12" style={{textAlign:isMobile ?  'center' : 'left'}}>
+                <div className="col-lg-9 col-md-6 col-sm-6 col-xs-12" style={{textAlign:isSmallScreen ?  'center' : 'left'}}>
                     <p className="angel_white">© 2020 - {new Date().getFullYear()} <span style={{color:'#fff'}}>Angel Foundation.</span> All Rights Reserved.</p>
                 </div>
-                <div className="col-md-3 col-sm-6 col-xs-12 text-md-right text-center pb-3">
+                <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12 pb-3" style={{textAlign:isSmallScreen ?  'center' : 'right'}}>
                     <div className="angel_white">Developed By<span><a style={{ marginLeft: 5}} className="link-light bold" alt="" href="https://ohtech.co.za" target="_blank" rel="noopener noreferrer">OpenHouse Technology</a></span></div>
                 </div>
                 </div>
