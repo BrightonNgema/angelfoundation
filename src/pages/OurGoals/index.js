@@ -6,6 +6,8 @@ import dummyImages from '../../utils/dummyImages';
 import { Footer, Loader, NavigationBar } from '../../components';
 import GovernmentSection from './GovernmentSection';
 import ConcernsSection from './ConcernsSection';
+import AngelMethodologySection from './AngelMethodologySection';
+import PRMethodologySection from './PRMethodologySection';
 
 class OurGoals extends Component {
     state = { loading:true }
@@ -41,6 +43,8 @@ class OurGoals extends Component {
                             <h2 style={{fontWeight:'bold' }}>Our Goals</h2>
                         </div>    
                     </div>
+                    <AngelMethodologySection />
+                    <PRMethodologySection/>
                     <GovernmentSection/>
                     <ConcernsSection/>
                 </section>

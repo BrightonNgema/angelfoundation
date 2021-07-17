@@ -4,16 +4,16 @@ import { colors } from '../../utils/theme'
 
 const GovernmentSection = () => {
     return (
-        <div className="pt100 pb100" style={{background:colors.angel_white}} >
+        <div className="pt100 pb100" style={{background:colors.angel_orange}} >
             <div className="row angel-width mx-auto">
                 <div>
                     <div className="mx-auto">
-                        <h1 style={{padding:"5px 10px", backgroundColor:colors.angel_black, fontSize:12, width:95, color:'#fff'}}>Foundation</h1>
+                        <h1 style={{padding:"5px 10px", backgroundColor:colors.angel_black, fontSize:12, width:105, color:'#fff'}}>GOVERNMENT</h1>
                     </div>
-                    <h2 className="heading-lg mt-4 mb-4" style={{fontWeight:'bold', color:colors.angel_dark}}>
+                    <h2 className="heading-lg mt-4 mb-4" style={{fontWeight:'bold', color:colors.angel_white}}>
                         GOVERNMENT INTERVENTION 
                     </h2>
-                    <p style={{color:colors.angel_dark}}>
+                    <p style={{color:colors.angel_white}}>
                         In 2020, the government availed R300 million to the National Arts Council (NAC) as part of the 
                         Presidential Empowerment Stimulus Programme in response to the challenges brought about 
                         by the COVID-19 pandemic. This was aimed at employment creation and retention initiatives 

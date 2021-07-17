@@ -3,37 +3,43 @@ import { useWindowSize } from '../../utils/useWindow';
 import MobileNavigation from './MobileNavigation'
 import DesktopNavigation from './DesktopNavigation'
 
+const MobileMenu = {
+    name:"Home",
+    link:"/",
+    subMenu:[]
+}
 const menuList = [
     {
-        name:"Home",
-        link:"/"
-    },
-    {
         name:"About Us",
-        link:"/about"
+        link:"/about",
+        subMenu:[]
     },
     {
         name:"Our Approach",
-        link:"/our-approach"
+        link:"/our-approach",
+        subMenu:[
+            {
+                name:"How You Can Help?",
+                link:"/our-approach"
+            },
+            
+        ]
     },
     {
         name:"Our Goals",
-        link:"/our-goals"
-    },
-    {
-        name:"How You Can Help?",
-        link:"/how-you-can-help"
+        link:"/our-goals",
+        subMenu:[]
     },
     {
         name:"Partners",
-        link:"/partners"
+        link:"/partners",
+        subMenu:[]
     }
 ]
 function NavigationBar() {
-    const {width,height, isMobile} = useWindowSize()
-    console.log("isMobile", isMobile)
+    const {width,height} = useWindowSize()
     if(width < 769 || height < 800){
-        return <MobileNavigation menuList={menuList}/>
+        return <MobileNavigation menuList={[MobileMenu,...menuList]} />
     }
     return <DesktopNavigation menuList={menuList} />
 }

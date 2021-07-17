@@ -67,11 +67,11 @@ const Footer = () => {
                 </div>
                 <div className="col-xs-6 col-md-4">
                     <h4 className="mb-4 pt30">CONTACT DETAILS</h4>
-                    <div className="text-left mb-2" style={{fontSize:14}}>
-                        No. 11519 Zone 7B Unit 10, <br/> Sebokeng, 1983
+                    <div className="text-left mb-2 bold" style={{fontSize:14}}>
+                        123 Street, Sandton, 1983
                     </div>
                     <div className="mb-2">
-                        <span style={{fontSize:14}}>Tel: <a className="link-primary bold" target="_blank" rel="noreferrer" href="tel:27 (0) 16 931 0899">+27 (0) 16 931 0899</a></span>
+                        <span style={{fontSize:14}}>Tel: <a className="link-primary bold" target="_blank" rel="noreferrer" href="tel:27 (0) 16 931 0899">+27 (0) 11 234 5678</a></span>
                     </div>
                     <div>
                         <span style={{fontSize:14}}>Email: <a className="link-primary bold" target="_blank" rel="noreferrer" href="mailto:info@angelfoundation.africa">info@angelfoundation.africa</a></span>
