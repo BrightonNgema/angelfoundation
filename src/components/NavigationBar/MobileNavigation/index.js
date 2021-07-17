@@ -12,25 +12,27 @@ const MobileNavigation = ({menuList, history}) => {
         return isActive ? "activeMenu" : ""
     }
     return (
-        <div style={{top:0,width:'100%', position:'fixed',zIndex:999}}>
-            <div style={{ backgroundColor:colors.angel_white,boxShadow: "0px 2px 5px 0px rgba(0,0,0,0.4)"}}>
-                <div className="container pt-3 pb-3">
-                    <div className="row">
-                        <div className="col-10">
-                            <Link to="/" onClick={() =>  setToggleMenu(false)}>
-                                <img alt="angle foundation logo" src={Logo} style={{height:50, margin:'auto', marginTop:-5}}/>
-                            </Link>
-                        </div>
-                        <div className="col-2 mt-auto mb-auto ml-auto">
-                        <div className="mx-auto">
-                            {!toggleMenu && <FaBars size="30px" onClick={() =>  setToggleMenu(true)}/>}
-                            {toggleMenu && <AiOutlineClose size="30px" onClick={() =>  setToggleMenu(false)}/>}
-                        </div>
+        <div style={{height:0}}>
+           <div style={{top:0,width:'100%', position:'fixed',zIndex:999}}>
+                <div style={{ backgroundColor:colors.angel_white,boxShadow: "0px 2px 5px 0px rgba(0,0,0,0.4)"}}>
+                    <div className="container pt-3 pb-3">
+                        <div className="row">
+                            <div className="col-10">
+                                <Link to="/" onClick={() =>  setToggleMenu(false)}>
+                                    <img alt="angle foundation logo" src={Logo} style={{height:50, margin:'auto', marginTop:-5}}/>
+                                </Link>
+                            </div>
+                            <div className="col-2 mt-auto mb-auto ml-auto">
+                            <div className="mx-auto">
+                                {!toggleMenu && <FaBars size="30px" onClick={() =>  setToggleMenu(true)}/>}
+                                {toggleMenu && <AiOutlineClose size="30px" onClick={() =>  setToggleMenu(false)}/>}
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="dropdown-menu-list" style={{marginLeft:!toggleMenu? -window.innerWidth : 0}}>
+            <div className="dropdown-menu-list" style={{transform:`translateY(${!toggleMenu ? "-100%" : "78px"}`}}>
                 {menuList.map((x, index) => (
                     <div style={{padding:"12px 20px"}} className={activeMenu(x)} onClick={() =>  history.push(x.link) && setToggleMenu(false)}>
                         <Link onClick={() =>  setToggleMenu(false)} to={x.link} className="navi-link">{x.name}</Link>
