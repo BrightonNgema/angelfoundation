@@ -3,16 +3,16 @@ import { colors } from '../../utils/theme'
 
 const ConcernsSection = (props) => {
     return (
-        <div className="pt100 pb100 mx-auto" style={{background:colors.angel_black}} >
+        <div className="pt100 pb100 mx-auto" style={{background:'#f7f7f7'}} >
             <div className="row angel-width mx-auto">
                 <div className="col-12 text-center">
                     <div className="mx-auto" style={{display:'flex', justifyContent:'center'}}>
-                        <h1 style={{padding:"5px 10px", backgroundColor:colors.angel_orange, fontSize:12, width:131, color:'#fff'}}>Helping Musician</h1>
+                        <h1 style={{padding:"5px 10px", backgroundColor:colors.angel_black, fontSize:12, width:90, color:'#fff'}}>Concerns</h1>
                     </div>
-                    <h1 className="heading-md bold mt-2 mb-4 text-center mx-auto" style={{color:colors.angel_white, maxWidth:700, alignSelf:'center'}}>
+                    <h1 className="heading-md bold mt-2 mb-4 text-center mx-auto" style={{color:colors.angel_black, maxWidth:700, alignSelf:'center'}}>
                         Some of the concerns raised by artists
                     </h1>
-                    <p className="bold mx-auto" style={{maxWidth:600,color:colors.angel_white,}}>
+                    <p className="bold mx-auto" style={{maxWidth:600,color:colors.angel_black,}}>
                         The funds had been mismanaged - Transparency and answers are the things that the artist seek to receive from the NAC.
                     </p>
                 </div>
