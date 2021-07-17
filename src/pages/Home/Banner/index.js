@@ -18,12 +18,8 @@ const Banner = () => {
         <div className="home-landing">
             <div className="home-landing-content container pt-1">
                 <h1 className="heading-lg">Hope For Musicians</h1>
-                <p>
-                    Mi in nulla posuere sollicitudin aliquam ultrices sagittis. 
-                    Egestas quis ipsum suspendisse ultrices gravida. 
-                    Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. 
-                    Arcu risus quis varius quam quisque id diam. 
-                    Aliquet enim tortor at auctor urna nunc id
+                <p style={{maxWidth:600,margin:'auto'}}>
+                 The Angel Foundation, and its  leadership, is a legitimate and honest entity with the main aim of assisting musicians during the difficult times.
                 </p>
                 <div className="row mt-5" style={{width:'100%',justifyContent:'center'}}>
                     {/* <div className="col-auto mr-3 mb-4"> 

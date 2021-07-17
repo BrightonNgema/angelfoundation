@@ -53,9 +53,8 @@ const Footer = () => {
                     {/* <h4 className="mb-4">Angel Foundation</h4> */}
                     <img className="mb-4" alt="angle foundation logo" src={Logo} style={{height:60}}/>
                     <p className="text-left pl-5" style={{fontSize:14}}>
-                        We are a family owned funeral home dedicated to providing personalized,
-                        professional and compassionate services to help lighten your burden and 
-                        support you through the difficult times that follow the loss of a loved one.
+                        The Angel Foundation for Musicians (AFM) was initiated <br/>
+                         by a core group of music industry executives in January 2020.
                     </p>
                     <div className="social-icons">
                         <div style={{display:'flex',justifyContent:'space-between', alignItems:'center',width:100,}}>
