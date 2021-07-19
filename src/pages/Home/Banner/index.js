@@ -3,7 +3,7 @@ import Button from '../../../components/Button';
 import { scroller } from "react-scroll";
 import { isMobile } from 'react-device-detect';
 
-const Banner = () => {
+const Banner = ({onDonate}) => {
 
     const onScroll = () => {
         return scroller.scrollTo("about-summary", {
@@ -22,9 +22,9 @@ const Banner = () => {
                  The Angel Foundation, and its  leadership, is a legitimate and honest entity with the main aim of assisting musicians during the difficult times.
                 </p>
                 <div className="row mt-5" style={{width:'100%',justifyContent:'center'}}>
-                    {/* <div className="col-auto mr-3 mb-4"> 
-                        <Button className="primary lg" title="Donate Now"/>
-                    </div> */}
+                    {onDonate && <div className="col-auto mr-3 mb-4"> 
+                        <Button className="primary lg" title="Donate Now" onClick={onDonate}/>
+                    </div>}
                     <div className="col-auto"> 
                         <Button className="dark lg" title="Discover More" onClick={onScroll}/>
                     </div>

@@ -30,11 +30,11 @@ const links = [
 
 const onSocial = (social) =>{
     switch (social) {
-        case "facebook": alert("facebook clicked")
+        case "facebook": window.open(" https://www.facebook.com/AngelFoundationForMusicians")
             break;
         case "twitter":alert("twitter clicked")
             break;
-        case "instagram": alert("instagram clicked")
+        case "instagram": window.open("https://www.instagram.com/afm_sa/")
             break;
         default:
             break;
@@ -54,7 +54,8 @@ const Footer = () => {
                     <img className="mb-4" alt="angle foundation logo" src={Logo} style={{height:60}}/>
                     <p className="text-left pl-5" style={{fontSize:14}}>
                         The Angel Foundation for Musicians (AFM) was initiated <br/>
-                         by a core group of music industry executives in January 2020.
+                         by a core group of music industry executives in January 2020.<br/>
+                         The AFM's aim is to assist the affected musicians by means of the Living Support Grants.
                     </p>
                     <div className="social-icons">
                         <div style={{display:'flex',justifyContent:'space-between', alignItems:'center',width:100,}}>
@@ -67,7 +68,7 @@ const Footer = () => {
                 <div className="col-xs-6 col-md-4">
                     <h4 className="mb-4 pt30">CONTACT DETAILS</h4>
                     <div className="text-left mb-2 bold" style={{fontSize:14}}>
-                        123 Street, Sandton, 1983
+                        3 Archibald Avenue, Mulbarton,<br/>Johannesburg 2059
                     </div>
                     <div className="mb-2">
                         <span style={{fontSize:14}}>Tel: <a className="link-primary bold" target="_blank" rel="noreferrer" href="tel:27 (0) 16 931 0899">+27 (0) 11 234 5678</a></span>
