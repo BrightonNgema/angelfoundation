@@ -27,11 +27,11 @@ function DesktopNavigation({menuList, history}) {
 
     const onSocial = (social) =>{
         switch (social) {
-            case "facebook": alert("facebook clicked")
+            case "facebook": window.open(" https://www.facebook.com/AngelFoundationForMusicians")
                 break;
             case "twitter":alert("twitter clicked")
                 break;
-            case "instagram": alert("instagram clicked")
+            case "instagram": window.open("https://www.instagram.com/afm_sa/")
                 break;
             default:
                 break;

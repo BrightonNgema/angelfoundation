@@ -37,8 +37,8 @@ const menuList = [
     }
 ]
 function NavigationBar() {
-    const {width,height} = useWindowSize()
-    if(width < 769 || height < 800){
+    const {width} = useWindowSize()
+    if(width < 769){
         return <MobileNavigation menuList={[MobileMenu,...menuList]} />
     }
     return <DesktopNavigation menuList={menuList} />
