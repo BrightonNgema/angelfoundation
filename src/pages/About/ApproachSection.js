@@ -19,7 +19,7 @@ const ApproachSection = (props) => {
                     <Button
                         className="dark lg mt-3"
                         title="How You Can Help?"
-                        onClick={() =>  props.history.push('/how-you-can-help')}
+                        onClick={() =>  props.history.push('/our-approach#how-can-you-help')}
                     />
                 </div>
             </div>

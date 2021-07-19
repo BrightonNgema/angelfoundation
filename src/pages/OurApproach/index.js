@@ -14,7 +14,7 @@ class OurApproach extends Component {
 
     componentDidMount(){
         this.setState({loading:false}, () => {
-        if(this.props.location.query){
+        if(window.location.href.includes('#')){
             return this.scrollToSection();
         }
         return animateScroll.scrollToTop();
@@ -22,19 +22,23 @@ class OurApproach extends Component {
     }
 
     scrollToSection = () => {
-        scroller.scrollTo(this.props.location.query.scrollId, {
+        const Id =  window.location.href.split('#')[1];
+        scroller.scrollTo(Id, {
             duration: 500,
             hashSpy: true,
             delay: 100,
             smooth: true,
-            offset:isMobile ? -60 : 0
+            offset:isMobile ? -60 : -100
         });
         
 
     }
 
     componentWillReceiveProps(){
-        animateScroll.scrollToTop();
+        if(window.location.href.includes('#')){
+            return this.scrollToSection();
+        }
+        return animateScroll.scrollToTop();
     }
 
 

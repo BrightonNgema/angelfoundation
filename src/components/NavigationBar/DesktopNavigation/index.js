@@ -61,7 +61,7 @@ function DesktopNavigation({menuList, history}) {
                                                 <div style={{...isShow(x.name), marginTop:20, position:'fixed',textAlign:'left',transition:"visibility 0s, opacity 0.2s linear"}}>
                                                     {x.subMenu.map((sub) =>  
                                                     <div className={activeMenu(x)} onClick={() => setToggleMenu("")} style={{padding:"10px 20px", backgroundColor:colors.angel_black}}>
-                                                        <Link onClick={() =>  setToggleMenu("")} to={{ pathname:x.link, query: { scrollId:"how-can-you-help" } }} className="navi-link light">{sub.name}</Link>
+                                                        <Link onClick={() =>  setToggleMenu("")} to={x.link+"#how-can-you-help"} className="navi-link light">{sub.name}</Link>
                                                     </div>)}
                                                 </div>
                                             
