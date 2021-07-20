@@ -32,7 +32,7 @@ const onSocial = (social) =>{
     switch (social) {
         case "facebook": window.open(" https://www.facebook.com/AngelFoundationForMusicians")
             break;
-        case "twitter":alert("twitter clicked")
+        case "twitter": window.open("https://twitter.com/afm_za")
             break;
         case "instagram": window.open("https://www.instagram.com/afm_sa/")
             break;

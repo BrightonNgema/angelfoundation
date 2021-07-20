@@ -1,7 +1,10 @@
-import { gql } from 'apollo-boost';
+import { gql } from '@apollo/client';
 
-export const SEND_EMAIL = gql`
+
+const SEND_EMAIL = gql`
     mutation($input:EmailInput){
         emailSend(input:$input)
 }
 `;
+
+export default SEND_EMAIL;

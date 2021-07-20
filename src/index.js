@@ -12,7 +12,7 @@ import '../src/styles/index.css';
 
 
 const client = new ApolloClient({
-  uri: 'https://ohtech-server.vercel.app/',
+  uri: 'http://localhost:4000/',
   cache: new InMemoryCache()
 });
 
