@@ -16,14 +16,22 @@ const client = new ApolloClient({
   cache: new InMemoryCache()
 });
 
-ReactDOM.render(
+
+const app = () => (
   <React.StrictMode>
     <ApolloProvider client={client}>
       {routes}
     </ApolloProvider>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+  </React.StrictMode>
+)
+import { hydrate, render } from "react-dom";
+
+const rootElement = document.getElementById("root");
+if (rootElement.hasChildNodes()) {
+  hydrate(app(), rootElement);
+} else {
+  render(app(), rootElement);
+}
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
