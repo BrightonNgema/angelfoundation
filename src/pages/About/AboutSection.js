@@ -36,7 +36,7 @@ const AboutSection = (props) => {
                                         <li> Dr Lindelani Mkhize (Chairman of Contento Group and Co-founder Joyous celebration),</li>
                                         <li> Yvonne “Chaka Chaka” Mhinga (Princess of Africa and Representative of the Global Body of Composers and Authors),</li>
                                         <li> Siyabonga 'Slikour' Metane (Head of Slikour Online) and </li>
-                                        <li> Vusi Leeuw (Executive at Warner Music)</li>
+                                        <li> Vusi Leeuw (Executive at Vusi Leeuw Consulting)</li>
                                     </ul>
                                 </p>
                             </div>
