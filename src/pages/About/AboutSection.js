@@ -20,7 +20,7 @@ const AboutSection = (props) => {
                                     ANGEL FOUNDATION<br/>ESTABLISHED
                                 </h2>
                                 <p >
-                                    The Angel Foundation for Musicians (AFM) was initiated by a core group of music industry executives in January 2020.<br/><br/>
+                                    The Angel Foundation for Musicians (AFM) was initiated by a core group of music industry executives in January 2021.<br/><br/>
                                     The financial impact of the lockdown measures was confirmed through a 
                                     widely publicized report commissioned by the South African Cultural Observatory 
                                     (SACO) in association with IKS Cultural Consulting titled “Impact Analysis: Live Music and 
@@ -33,10 +33,10 @@ const AboutSection = (props) => {
                                         <li> Antos Stella (Head of Content Connect Africa),</li>
                                         <li> Sipho Dlamini (Head of Universal Music Africa),</li>
                                         <li> Sean Watson (Head of Sony Music Entertainment),</li>
-                                        <li> Dr Lindelani Mkhize (Co-founder of Joyous Celebration),</li>
+                                        <li> Dr Lindelani Mkhize (Chairman of Contento Group and Co-founder Joyous celebration),</li>
                                         <li> Yvonne “Chaka Chaka” Mhinga (Princess of Africa and Representative of the Global Body of Composers and Authors),</li>
                                         <li> Siyabonga 'Slikour' Metane (Head of Slikour Online) and </li>
-                                        <li> Vusi Leeuw (Executive at Warner Music)</li>
+                                        <li> Vusi Leeuw (Executive at Vusi Leeuw Consulting)</li>
                                     </ul>
                                 </p>
                             </div>

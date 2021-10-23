@@ -54,7 +54,7 @@ const Footer = () => {
                     <img className="mb-4" alt="angle foundation logo" src={Logo} style={{height:60}}/>
                     <p className="text-left pl-5" style={{fontSize:14}}>
                         The Angel Foundation for Musicians (AFM) was initiated <br/>
-                         by a core group of music industry executives in January 2020.<br/>
+                         by a core group of music industry executives in January 2021.<br/>
                          The AFM's aim is to assist the affected musicians by means of the Living Support Grants.
                     </p>
                     <div className="social-icons">
