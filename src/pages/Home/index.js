@@ -7,7 +7,7 @@ import Banner from './Banner';
 import AboutSection from './AboutSection';
 import FoundationSection from './FoundationSection';
 import ApproachSection from './ApproachSection';
-import PartnersSection from './PartnersSection';
+// import PartnersSection from './PartnersSection';
 import { withApollo } from '@apollo/client/react/hoc';
 import { YOCO_PAYMENT } from '../../graphql-api/mutations';
 
@@ -90,7 +90,7 @@ class HomePage extends Component {
                     <AboutSection {...this.props}/>
                     <FoundationSection {...this.props}/>
                     <ApproachSection {...this.props}/>
-                    <PartnersSection {...this.props}/>
+                    {/* <PartnersSection {...this.props}/> */}
                 </section>
                 <Footer />
             </div>
