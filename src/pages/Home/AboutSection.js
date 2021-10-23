@@ -17,7 +17,7 @@ const Section1 = (props) => {
                         ANGEL FOUNDATION<br/>ESTABLISHED
                     </h2>
                     <p >
-                        The Angel Foundation for Musicians (AFM) was initiated by a core group of music industry executives in January 2020.<br/><br/>
+                        The Angel Foundation for Musicians (AFM) was initiated by a core group of music industry executives in January 2021.<br/><br/>
                         The financial impact of the lockdown measures was confirmed through a widely publicized report commissioned by the South African Cultural Observatory (SACO) in association with IKS Cultural Consulting titled “Impact Analysis: Live Music and its Venues and the South African economy during COVID-19.”
                     </p>
                     <Button
