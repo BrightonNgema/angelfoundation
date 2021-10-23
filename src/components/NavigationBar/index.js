@@ -10,6 +10,11 @@ const MobileMenu = {
 }
 const menuList = [
     {
+        name:"Home",
+        link:"/",
+        subMenu:[]
+    },
+    {
         name:"About Us",
         link:"/about",
         subMenu:[]
@@ -30,11 +35,11 @@ const menuList = [
         link:"/our-goals",
         subMenu:[]
     },
-    {
-        name:"Partners",
-        link:"/partners",
-        subMenu:[]
-    }
+    // {
+    //     name:"Partners",
+    //     link:"/partners",
+    //     subMenu:[]
+    // }
 ]
 function NavigationBar() {
     const {width} = useWindowSize()

@@ -43,7 +43,7 @@ const ApproachSection = () => {
                             <RiHandCoinLine size={60} color={colors.angel_dark}/>
                             <h3 className="mt-3" style={{lineHeight:1, fontWeight:600, colors:colors.angel_dark}}>Digital cash vouchers</h3>
                             <p className="pr20 pl20 mt20">
-                                Digital cash vouchers to the value of R1000 will be given to the affected 
+                                Digital cash vouchers to the value of R800 will be given to the affected 
                                 musicians for food and other necessities 
                             </p>
                         </div>
