@@ -31,10 +31,10 @@ const AboutSection = (props) => {
                                     <ul>
                                         <li> Nhlanhla Sibisi (Head of the Recording Industry of South Africa),</li>
                                         <li> Antos Stella (Head of Content Connect Africa),</li>
-                                        <li> Sipho Dlamini (Head of Universal Music Africa),</li>
-                                        <li> Sean Watson (Head of Sony Music Entertainment),</li>
+                                        <li> Sipho Dlamini (CEO of Universal Music Africa),</li>
+                                        <li> Sean Watson (Managing Director Sony Music Entertainment Africa),</li>
                                         <li> Dr Lindelani Mkhize (Chairman of Contento Group and Co-founder Joyous celebration),</li>
-                                        <li> Yvonne “Chaka Chaka” Mhinga (Princess of Africa and Representative of the Global Body of Composers and Authors),</li>
+                                        <li> Yvonne “Chaka Chaka” Mhinga (Princess of Africa and Representative of the VP CISAC of Composers and Authors),</li>
                                         <li> Siyabonga 'Slikour' Metane (Head of Slikour Online) and </li>
                                         <li> Vusi Leeuw (Executive at Vusi Leeuw Consulting)</li>
                                     </ul>
