@@ -18,8 +18,9 @@ const Banner = ({onDonate}) => {
         <div className="home-landing">
             <div className="home-landing-content container pt-1">
                 <h1 className="heading-lg">Hope For Musicians</h1>
-                <p style={{maxWidth:600,margin:'auto'}}>
-                 The Angel Foundation, and its  leadership, is a legitimate and honest entity with the main aim of assisting musicians during the difficult times.
+                <p style={{maxWidth:800,margin:'auto'}}>
+                 {/* The Angel Foundation, and its  leadership, is a legitimate and honest entity with the main aim of assisting musicians during the difficult times. */}
+                 The Angel Foundation for Musicians is a non-profit initiative that arose from the concern of number of music industry stakeholders who have seen first-hand the devastation that the country's efforts to contain the Coronavirus pandemic have had on musicians.
                 </p>
                 <div className="row mt-5" style={{width:'100%',justifyContent:'center'}}>
                     {onDonate && <div className="col-auto mr-3 mb-4"> 
