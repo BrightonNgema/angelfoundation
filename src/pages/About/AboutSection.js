@@ -1,6 +1,7 @@
 import React from 'react'
 import { colors } from '../../utils/theme';
 import { useWindowSize } from '../../utils/useWindow';
+import { Button } from '../../components';
 
 const image1 = "https://images.unsplash.com/photo-1541788968749-7683d395688d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
 
@@ -20,7 +21,7 @@ const AboutSection = (props) => {
                                     ANGEL FOUNDATION<br/>ESTABLISHED
                                 </h2>
                                 <p >
-                                    The Angel Foundation for Musicians (AFM) was initiated by a core group of music industry executives in January 2020.<br/><br/>
+                                    The Angel Foundation for Musicians (AFM) was initiated by a core group of music industry executives in January 2021.<br/><br/>
                                     The financial impact of the lockdown measures was confirmed through a 
                                     widely publicized report commissioned by the South African Cultural Observatory 
                                     (SACO) in association with IKS Cultural Consulting titled “Impact Analysis: Live Music and 
@@ -31,13 +32,20 @@ const AboutSection = (props) => {
                                     <ul>
                                         <li> Nhlanhla Sibisi (Head of the Recording Industry of South Africa),</li>
                                         <li> Antos Stella (Head of Content Connect Africa),</li>
-                                        <li> Sipho Dlamini (Head of Universal Music Africa),</li>
-                                        <li> Sean Watson (Head of Sony Music Entertainment),</li>
-                                        <li> Dr Lindelani Mkhize (Co-founder of Joyous Celebration),</li>
-                                        <li> Yvonne “Chaka Chaka” Mhinga (Princess of Africa and Representative of the Global Body of Composers and Authors),</li>
+                                        <li> Sipho Dlamini (CEO of Universal Music Africa),</li>
+                                        <li> Sean Watson (Managing Director Sony Music Entertainment Africa),</li>
+                                        <li> Dr Lindelani Mkhize (Chairman of Contento Group and Co-founder Joyous celebration),</li>
+                                        <li> Yvonne “Chaka Chaka” Mhinga (Princess of Africa and Representative of the VP CISAC of Composers and Authors),</li>
                                         <li> Siyabonga 'Slikour' Metane (Head of Slikour Online) and </li>
-                                        <li> Vusi Leeuw (Executive at Warner Music)</li>
+                                        <li> Vusi Leeuw (Executive at Vusi Leeuw Consulting)</li>
                                     </ul>
+                                    <div className="m-3 mt-5">
+                                        <Button 
+                                            className="lg dark no-transform" 
+                                            title="Donate Now" 
+                                            onClick={() => window.open("https://pay.yoco.com/angel-foundation-for-musicians")}
+                                        />
+                                    </div>
                                 </p>
                             </div>
                         </div>

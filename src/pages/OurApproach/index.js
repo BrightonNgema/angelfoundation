@@ -3,7 +3,7 @@ import {Helmet} from "react-helmet";
 import { colors } from '../../utils/theme';
 import { animateScroll,scroller } from "react-scroll";
 import dummyImages from '../../utils/dummyImages';
-import { Footer, Loader, NavigationBar } from '../../components';
+import { Footer, Loader, NavigationBar, Button } from '../../components';
 import ApproachSection from './ApproachSection';
 import EligibleSection from './elegibleSection';
 import { isMobile } from 'react-device-detect';
@@ -81,6 +81,13 @@ class OurApproach extends Component {
                                     </ul>
                                     The Angel Foundation, and its  leadership, is a legitimate and honest entity with the main aim of assisting musicians during the difficult times.
                                 </p>
+                                <div className="mt-5">
+                                        <Button 
+                                            className="lg light no-transform" 
+                                            title="Donate Now" 
+                                            onClick={() => window.open("https://pay.yoco.com/angel-foundation-for-musicians")}
+                                        />
+                                    </div>
                             </div>
                         </div>
                     </div>

@@ -85,7 +85,7 @@ class HomePage extends Component {
                     <link rel="canonical" href="https://www.angelfoundation.africa/" />
                 </Helmet>
                 <NavigationBar/>
-                <Banner />
+                <Banner onDonate={() => window.open("https://pay.yoco.com/angel-foundation-for-musicians")}/>
                 <section>
                     <AboutSection {...this.props}/>
                     <FoundationSection {...this.props}/>

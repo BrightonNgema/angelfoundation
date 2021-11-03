@@ -25,6 +25,10 @@ const links = [
     {
         name:"Partners",
         link:"/partners"
+    },
+    {
+        name:"Donate",
+        link:"https://pay.yoco.com/angel-foundation-for-musicians"
     }
 ];
 
@@ -54,7 +58,7 @@ const Footer = () => {
                     <img className="mb-4" alt="angle foundation logo" src={Logo} style={{height:60}}/>
                     <p className="text-left pl-5" style={{fontSize:14}}>
                         The Angel Foundation for Musicians (AFM) was initiated <br/>
-                         by a core group of music industry executives in January 2020.<br/>
+                         by a core group of music industry executives in January 2021.<br/>
                          The AFM's aim is to assist the affected musicians by means of the Living Support Grants.
                     </p>
                     <div className="social-icons">
@@ -83,7 +87,8 @@ const Footer = () => {
                     <ul className="footer-links bold">
                         {links.map((item) => (
                             <li>
-                                <Link className="link-primary" to={item.link}>{item.name}</Link>
+                                {item.name !== "Donate" && <Link className="link-primary" to={item.link}>{item.name}</Link>}
+                                {item.name === "Donate" && <a className="link-primary" href={item.link} target="_blank" rel="noreferrer">{item.name}</a>}
                             </li>
                         ))}
                     </ul>
