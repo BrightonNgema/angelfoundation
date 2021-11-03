@@ -3,11 +3,6 @@ import { useWindowSize } from '../../utils/useWindow';
 import MobileNavigation from './MobileNavigation'
 import DesktopNavigation from './DesktopNavigation'
 
-const MobileMenu = {
-    name:"Home",
-    link:"/",
-    subMenu:[]
-}
 const menuList = [
     {
         name:"Home",
@@ -44,7 +39,7 @@ const menuList = [
 function NavigationBar() {
     const {width} = useWindowSize()
     if(width < 769){
-        return <MobileNavigation menuList={[MobileMenu,...menuList]} />
+        return <MobileNavigation menuList={menuList} />
     }
     return <DesktopNavigation menuList={menuList} />
 }
