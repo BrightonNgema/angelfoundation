@@ -4,6 +4,7 @@ import { Link, withRouter } from 'react-router-dom'
 import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebook,FaTwitter } from "react-icons/fa";
 import { colors } from '../../../utils/theme';
+import Button from '../../../components/Button';
 
 
 function DesktopNavigation({menuList, history}) {
@@ -44,14 +45,14 @@ function DesktopNavigation({menuList, history}) {
     }
     return (
         <div className={`desktop-nav ${isScrollEnough ? "sticky-nav" : "non-sticky-nav"}`} onMouseLeave={() =>  setToggleMenu(false)}>
-            <div className="container pt-4 pb-4">
+            <div className="container pt-4 pb-4 p-0">
                 <div className="row text-center">
-                    <div style={{display:'flex',justifyContent:'space-evenly', alignItems:'center',width:'14%', marginRight:'1%'}}>
+                    <div style={{display:'flex',justifyContent:'space-evenly', alignItems:'center',width:'18%', marginRight:'1%'}}>
                             <FaFacebook onClick={() => onSocial('facebook')} className="social-icon" size="18px"/>
                             <FaTwitter onClick={() => onSocial('twitter')} className="social-icon" size="21px"/>
                             <AiFillInstagram onClick={() => onSocial('instagram')} className="social-icon" size="21px"/>
                     </div>
-                    <div style={{display:'flex', width:'70%'}}>
+                    <div style={{display:'flex', width:'65%'}}>
                         <ul className="NavList">
                             {menuList.map((x, index) => {
                                 return (
@@ -74,19 +75,21 @@ function DesktopNavigation({menuList, history}) {
                                                 </Link> 
                                             </li>
                                         }
+                                        
                                     </React.Fragment>
                                 )
                             })}
+                            
                         </ul> 
                     </div>
-                    <div style={{display:'flex',width:'14%',marginLeft:'1%'}}>
-                        {/* <div style={{margin:'auto 0px auto auto'}}>
+                    <div style={{display:'flex',marginLeft:'1%', width:'auto', margin:'auto'}}>
+                        <div>
                             <Button 
-                                className={`no-transform ${isScrollEnough ? "" : "light"}`}
-                                title="Contact Us"
-                                onClick={() =>  history.push("/contact")}
+                                className="md primary" 
+                                title="Donate Now" 
+                                onClick={() => window.open("https://pay.yoco.com/angel-foundation-for-musicians")}
                             />
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </div>

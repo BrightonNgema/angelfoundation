@@ -54,6 +54,11 @@ button.my-button{
     color: var(--angel_white);
   }
   
+  button.my-button.sm{
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+
   button.my-button.md{
     padding: 8px 15px;
     font-size: 14px;
