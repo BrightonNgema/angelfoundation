@@ -25,6 +25,10 @@ const links = [
     {
         name:"Partners",
         link:"/partners"
+    },
+    {
+        name:"Donate",
+        link:"https://pay.yoco.com/angel-foundation-for-musicians"
     }
 ];
 
@@ -83,7 +87,8 @@ const Footer = () => {
                     <ul className="footer-links bold">
                         {links.map((item) => (
                             <li>
-                                <Link className="link-primary" to={item.link}>{item.name}</Link>
+                                {item.name !== "Donate" && <Link className="link-primary" to={item.link}>{item.name}</Link>}
+                                {item.name === "Donate" && <a className="link-primary" href={item.link} target="_blank" rel="noreferrer">{item.name}</a>}
                             </li>
                         ))}
                     </ul>
